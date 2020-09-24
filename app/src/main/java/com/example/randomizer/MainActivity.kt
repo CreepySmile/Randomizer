@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"This is a Toast",Toast.LENGTH_LONG).show()
         }
         btnCount.setOnClickListener {
-            var count : Int = 0
+            var count : Int = txtCount.text.toString().toInt()
             count += 1
             txtCount.text = count.toString()
         }
